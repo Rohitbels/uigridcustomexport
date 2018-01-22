@@ -10,7 +10,6 @@
     "angular-ui-grid": ">=4.2.2"
   },
   "description": "",
-  "main": "dist/uiGridCustomExport.js",
   "license": "MIT",
   "homepage": "",
   "resolutions": {
