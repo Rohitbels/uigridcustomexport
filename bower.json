@@ -3,7 +3,7 @@
   "authors": [
     "rohit <belsarerohit81@gmail.com>"
   ],
- "main": "dist/uiGridCustomExport.js",
+ "main": "uiGridCustomExport.js",
   "dependencies": {
     "angular": ">=1.2.32",
     "lodash": ">=4.17.4",
