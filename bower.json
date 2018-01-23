@@ -3,17 +3,18 @@
   "authors": [
     "rohit <belsarerohit81@gmail.com>"
   ],
- "main": "dist/uiGridCustomExport.js",
+  "private":false,
+ "main": "uiGridCustomExport.js",
   "dependencies": {
-    "angular": ">=1.2.32",
-    "lodash": ">=4.17.4",
-    "angular-ui-grid": ">=4.2.2"
+    "angular": ">=1.0.8",
+    "lodash": ">=4.16.4",
+    "angular-ui-grid": ">=3.0.1"
   },
   "description": "",
-  "main": "dist/uiGridCustomExport.js",
   "license": "MIT",
   "homepage": "",
   "resolutions": {
     "angular": "1.2.32"
   }
 }
+
