@@ -3,6 +3,7 @@
   "authors": [
     "rohit <belsarerohit81@gmail.com>"
   ],
+
   "private":false,
  "main": "uiGridCustomExport.js",
   "dependencies": {
