@@ -7,15 +7,12 @@
   "private":false,
  "main": "uiGridCustomExport.js",
   "dependencies": {
-    "angular": ">=1.0.8",
+    "angular": ">=1.2.23",
     "lodash": ">=4.16.4",
     "angular-ui-grid": ">=3.0.1"
   },
   "description": "",
   "license": "MIT",
-  "homepage": "",
-  "resolutions": {
-    "angular": "1.2.32"
-  }
+  "homepage": ""
 }
 
