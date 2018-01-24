@@ -1,5 +1,5 @@
  if (typeof module !== "undefined" && typeof exports !== "undefined" && module.exports === exports){
-   module.exports = 'checklist-model';
+   module.exports = 'uiGridCustomExport';
  }
 
 angular
