@@ -12,8 +12,5 @@
   "description": "",
   "main": "dist/uiGridCustomExport.js",
   "license": "MIT",
-  "homepage": "",
-  "resolutions": {
-    "angular": "1.2.32"
-  }
+  "homepage": ""
 }
