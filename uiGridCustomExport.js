@@ -151,7 +151,7 @@ angular
         //Setting CSV options
         //ColumnOrder,header and fieldSep(Delimiter)
         //Header and columnOrder required
-        this.getBuildCsvOptions = function getBuildCsvOptions(obj = {}) {
+        this.getBuildCsvOptions = function getBuildCsvOptions(obj ) {
             var options = _.clone(obj);
             options = _.defaults(options, defaultCSVBuildOptions);
             return options;
@@ -165,7 +165,9 @@ angular
         };
 
         //Switches the data column name from the field names to Display name(names expected in the CSV)
-        this.switchColumnNamesInData = function(rawData = [], options=defaultCSVBuildOptions) {
+        this.switchColumnNamesInData = function(rawData , opts) {
+            var options = _.clone(opts);
+            options = _.defaults(options, defaultCSVBuildOptions);
             var exportData = [];
 
             exportData = _.clone(rawData);
@@ -228,7 +230,7 @@ angular
 
         //Switches the data column name from the field names to Display name(names expected in the CSV)
         //if visible is true
-        this.getExportReadyGridData = function(rawData, gridApi, options, displayNameColumns, fieldNameColumns, visibleRowsOnly) {
+        this.getExportReadyGridData = function(rawData, gridApi, options) {
 
             var exportData = [];
             //Only Visible Data
@@ -248,7 +250,9 @@ angular
             return that.switchColumnNamesInData(rawData, options);
         };
 
-        this.getDisplayColumnsFromGrid = function(gridApi, options = defaultCSVBuildOptions) {
+        this.getDisplayColumnsFromGrid = function(gridApi, opts) {
+            var options = _.clone(opts);
+            options = _.defaults(options, defaultCSVBuildOptions);
             var displayColumnNames, visibleColumns;
             //getting the Visible Columns from Main Grid
             //Filtering the Visible columns to only those containing data from Back End .Excluding columns like Action etc.
@@ -271,7 +275,9 @@ angular
             return displayColumnNames;
         };
 
-        this.getFieldColumnsFromGrid = function(gridApi, options = defaultCSVBuildOptions) {
+        this.getFieldColumnsFromGrid = function(gridApi, opts) {
+            var options = _.clone(opts);
+            options = _.defaults(options, defaultCSVBuildOptions);
             var fieldColumnNames, visibleColumns;
             //getting the Visible Columns from Main Grid
             //Filtering the Visible columns to only those containing data from Back End .Excluding columns like Action etc.
@@ -341,7 +347,7 @@ this.exportGridDataWithAdditionalColumns=function(gridApi,options){
 };
 
 
-this.exportGridDataDefault=function(gridApi,options=gridDataDefault){
+this.exportGridDataDefault=function(gridApi,options){
 
    var optionsGridDataDefault=_.clone(options);
 
